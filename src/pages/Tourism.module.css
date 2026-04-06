@@ -1,0 +1,114 @@
+.tourismPage {
+    direction: rtl;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.gallerySection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* الفلاتر */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filters button {
+    padding: 10px 25px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filters button:hover,
+.activeFilter {
+    background: #007bff !important;
+    color: white;
+    border-color: #007bff !important;
+}
+
+/* الشبكة */
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.destCard {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease-in-out;
+}
+
+.destCard:hover {
+    transform: translateY(-10px);
+}
+
+.imageBox {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.destCard:hover img {
+    transform: scale(1.1);
+}
+
+.categoryBadge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.destContent {
+    padding: 20px;
+    text-align: right;
+}
+
+.exploreBtn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #007bff;
+    background: transparent;
+    color: #007bff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.exploreBtn:hover {
+    background: #007bff;
+    color: white;
+}

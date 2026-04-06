@@ -1,0 +1,96 @@
+.navbar {
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    direction: rtl;
+}
+
+.navContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* الشعار */
+.logo a {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #333;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #007bff;
+    /* اللون الأزرق الأساسي للموقع */
+}
+
+/* روابط التنقل */
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 5px 0;
+}
+
+.navLinks a:hover {
+    color: #007bff;
+}
+
+/* خط تحت الرابط النشط */
+.navLinks a.active {
+    color: #007bff;
+}
+
+.navLinks a.active::after,
+.navLinks a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    transition: 0.3s;
+}
+
+/* الأزرار */
+.loginBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.loginBtn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* لجعل الموقع متجاوب مع الموبايل */
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+        /* سنقوم لاحقاً ببناء القائمة الجانبية للموبايل */
+    }
+}
