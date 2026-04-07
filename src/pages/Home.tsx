@@ -8,7 +8,7 @@ function Home() {
       {/* 1. Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.title}> Voya</h1>
+          <h1 className={styles.title}> Voyaa</h1>
           <p className={styles.subtitle}>بوابتك الذكية لتنظيم رحلة العمر في مكان واحد</p>
           <button className={styles.ctaButton} onClick={() => navigate('/flights')}>
             ابدأ رحلتك الآن
