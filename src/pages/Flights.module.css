@@ -104,3 +104,54 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .header {
+        padding: 42px 16px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .searchSection {
+        margin: -28px 12px 24px;
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    .searchForm {
+        gap: 12px;
+    }
+
+    .inputGroup {
+        min-width: 100%;
+    }
+
+    .searchBtn {
+        width: 100%;
+        padding: 12px 16px;
+    }
+
+    .offers {
+        padding: 16px 12px 30px;
+    }
+
+    .offerCard {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 14px;
+        border-right-width: 4px;
+    }
+
+    .flightInfo p {
+        font-size: 1rem;
+    }
+
+    .bookBtn {
+        width: 100%;
+        padding: 10px 14px;
+    }
+}

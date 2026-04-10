@@ -18,6 +18,7 @@
     text-align: center;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    padding: 0 16px;
 }
 
 .title {
@@ -118,4 +119,68 @@
 
 .tourImg {
     background-image: url("../assets/images/bares.jpg");
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 62vh;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+    .title {
+        font-size: 2.6rem;
+        margin-bottom: 6px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        line-height: 1.7;
+    }
+
+    .ctaButton {
+        width: 100%;
+        max-width: 320px;
+        padding: 13px 20px;
+        font-size: 1rem;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 36px 16px;
+        gap: 22px;
+    }
+
+    .feature {
+        background: #fff;
+        border-radius: 16px;
+        padding: 18px 16px;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    .icon {
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+    }
+
+    .sectionTitle {
+        margin: 34px 0 20px;
+        font-size: 1.9rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 0 16px 44px;
+    }
+
+    .card {
+        border-radius: 16px;
+        padding-bottom: 14px;
+    }
+
+    .imagePlaceholder {
+        height: 170px;
+    }
 }
